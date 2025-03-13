@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #eceffe, #ced6fb);
+}
+.card-item {
+  list-style: none;
+}
+.card-wrapper {
+  /* max-width: 2010px; */
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+.card-link {
+  user-select: none;
+  width: 400px;
+  /* height: 250px; */
+  display: block;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  text-decoration: none;
+  font-size: 11px;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+}
+.card-link:hover {
+  border-color: #00b7ff;
+}
+.card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.badge {
+  color: #00b7ff;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* top ,right and left,bottom */
+  margin: 20px 0px 18px;
+  background-color: #dde4ff;
+  width: fit-content;
+  border-radius: 50px;
+}
+.card-title {
+  font-size: 1.19rem;
+  color: #000;
+  font-weight: 600;
+}
+.card-button {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  color: #5372f0;
+  background: none;
+  cursor: pointer;
+  border: 2px solid #5372f0;
+  transform: rotate(-45deg);
+  align-self: center;
+}
+.card-link:hover .card-button {
+  color: #fff;
+  background: #00b7ff;
+}
+.badge.Designer {
+  color: #b22485;
+  background: #f7ddd5;
+}
+.badge.Web-Developer {
+  color: #b25a2b;
+  background: #ffe3d2;
+}
+.badge.Programmer {
+  color: #205c20;
+  background-color: #d6f8d6;
+}
+.badge.Software-Engineer {
+  color: #856404;
+  background: #fff3cd;
+}
+.badge.Technology {
+  color: lightseagreen;
+  background: rgba(0, 183, 255, 0.171);
+}
+.card-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background-color: #00b7ff;
+}
+.card-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+/* remove the arrows for the both directions */
+.card-wrapper .swiper-slide-button {
+  color: #00b7ff;
+  margin-top: -35px;
+}
+@media (max-width: 1069px) {
+  .card-wrapper {
+    margin: 0 10px 25px;
+  }
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
+  .card-link {
+    width: 270px;
+  }
+}
+@media (min-width: 230px) {
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
+  .card-link{
+    width: 180px;
+  }
+}
+@media (min-width: 250px) {
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
+  .card-link{
+    width: 190px;
+  }
+}
+@media (min-width: 300px) {
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
+  .card-link{
+    width: 320px;
+
+  }
+}
+@media (min-width: 400px) {
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
+  .card-item{
+    position: relative;
+    left: 20px;
+  }
+  /* .card-link{
+    width: 250px;
+  } */
+}
+@media (min-width: 500px) {
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
+  .card-link{
+    width: 350px;
+  }
+  .card-item{
+    position: relative;
+    left: 100px;
+    /* transform:translateX(500px); */
+  }
+}
+@media (min-width: 600px) {
+  .card-wrapper .swiper-slide-button {
+    display: block;
+  }
+  .card-link{
+    width: 270px;
+  }
+    .card-item{
+    position: relative;
+    left: 0px;
+    /* transform:translateX(500px); */
+  }
+
+
+@media(min-width:750px) {
+.card-link{
+  width: 325px;
+  
+  
+}}
+@media(min-width:900px) {
+.card-link{
+  width: 285px;
+  
+  
+}}
+@media(min-width:1069px){
+  .card-link{
+    width: 282px;
+  }
+  .swiper-slide-button{
+    display: block;
+  }
+
+}
+@media(min-width:1189px){
+  .card-link{
+    width: 352px;
+  }
+  .swiper-slide-button{
+    display: block;
+  }
+
+}
+@media(min-width:2080px){
+  .card-link{
+    width: 350px;
+  }
+  .swiper-slide-button{
+    display: block;
+  }
+
+}
+.card-link:active {
+  cursor: grabbing;
+}
+}
